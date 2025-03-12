@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import 'header';
 
 :root {
-    --primaryTexcolor :  #232e35;
-    --secondaryTextColor
+    --primaryTextColor :  #232e35;
+    --secondaryTextColor: #656d72;
+    --borderColor:#f1f1f1;
+    --lineColor: #d9d9d9;
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51eB;
+    --sectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
 }
-a
+
 * {
     margin: 0;
     padding: 0;
@@ -14,4 +24,20 @@ a
 body {
     font-family: "Roboto", sans-serif;
 }
-@import '_header.scss';
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
