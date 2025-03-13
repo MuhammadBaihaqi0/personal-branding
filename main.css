@@ -184,6 +184,65 @@ nav ul li a {
   fill: var(--primaryIconColor);
 }
 
+.wrapper {
+  position: relative;
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondaryBackgroundColor);
+  flex-wrap: wrap;
+}
+
+.top-div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-div h1 {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.top-div hr {
+  position: relative;
+  width: 70px;
+  height: 4px;
+  border: none;
+  background: var(--primaryIconColor);
+}
+
+.content {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.content img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: #eee;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 :root {
   --primaryTextColor: #232e35;
   --secondaryTextColor: #656d72;
