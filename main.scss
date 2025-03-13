@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 @import 'header';
+@import 'services';
+@import 'portofolio';
 
 :root {
     --primaryTextColor :  #232e35;
@@ -9,7 +11,7 @@
     --primaryBackgroundColor: #fff;
     --secondaryBackgroundColor: #fbfbfb;
     --thirdBackgroundColor: #f5f3fe;
-    --primaryIconColor: #7e74f1;
+    --primaryIconColor: #E50046;
     --primaryIconColorHover: #5d51eB;
     --sectionPadding: 6rem 0;
     --itemBorderRadius: 0.7rem;

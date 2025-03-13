@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 .main-container {
-  width: 1200px;
+  width: 1750px;
   margin: 0 auto;
 }
 
@@ -58,6 +58,7 @@ nav ul li a {
   height: 720px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .pre-title {
@@ -79,6 +80,86 @@ nav ul li a {
   position: absolute;
   display: block;
   left: 0;
+  top: 50%;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+.hero-name span {
+  color: var(--primaryIconColor);
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+.hero-right img {
+  width: 55%;
+}
+
+.section-title {
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+}
+
+#services {
+  color: var(--secondaryBackgroundColor);
+  padding: var(--sectionPadding);
+}
+
+.services .pre-title {
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.service {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--primaryBackgroundColor);
+  border-radius: var(--itemBorderRadius);
+}
+.service h4 {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.service-icon {
+  background: var(--thirdBackgroundColor);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.service-icon svg {
+  fill: var(--primaryIconColor);
+}
+
+#portofolios {
+  padding: var(--sectionPadding);
+}
+
+.portofolio {
+  border-radius: var(--itemBorderRadius);
+}
+.portofolio-cover {
+  height: 250px;
+}
+.portofolio-cover img {
+  width: 100%;
+  height: 100%;
 }
 
 :root {
@@ -89,7 +170,7 @@ nav ul li a {
   --primaryBackgroundColor: #fff;
   --secondaryBackgroundColor: #fbfbfb;
   --thirdBackgroundColor: #f5f3fe;
-  --primaryIconColor: #7e74f1;
+  --primaryIconColor: #E50046;
   --primaryIconColorHover: #5d51eB;
   --sectionPadding: 6rem 0;
   --itemBorderRadius: 0.7rem;
