@@ -4,6 +4,7 @@
 
 .portofolio {
     border-radius: var(--itemBorderRadius);
+    overflow: hidden;
 
     &-cover {
         height: 250px;
@@ -11,6 +12,36 @@
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
+    }
+
+    &-info {
+        padding: 2rem 1.5rem;
+    }
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 1.05rem;
+    }
+
+    &-title {
+
+        a svg {
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                fill: var(--primaryIconColor);
+            }
+        }
+
     }
 }
