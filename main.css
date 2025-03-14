@@ -106,7 +106,7 @@ nav ul li a {
 }
 
 #services {
-  color: var(--secondaryBackgroundColor);
+  background: var(--secondaryBackgroundColor);
   padding: var(--sectionPadding);
 }
 
@@ -273,6 +273,106 @@ nav ul li a {
   margin-bottom: 0.6rem;
 }
 
+footer {
+  padding: 4rem;
+  background: var(--secondaryBackgroundColor);
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 1rem;
+}
+.footer-icons a {
+  margin: 0.5rem;
+}
+.footer-icons a:hover svg {
+  fill: var(--primaryIconColor);
+}
+.footer-icons svg {
+  fill: #3e3f40;
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .grid-3 {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 825px) {
+  .reb {
+    display: block;
+    cursor: pointer;
+  }
+  .toggle-reb .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+  .toggle-reb .line-2 {
+    opacity: 0;
+  }
+  .toggle-reb .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  nav {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--primaryBackgroundColor);
+    border-left: 1px solid var(--borderColor);
+    z-index: 9;
+    transform: translateX(100%);
+    transition: 0.3 ease-in-out;
+  }
+  nav ul {
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-active {
+    transform: translateX(0);
+  }
+  :root {
+    --sectionPadding: 4rem 0;
+  }
+  .section-title {
+    font-size: 1.6rem;
+    margin: 0.6rem 0 2.5rem;
+  }
+  .pre-title {
+    font-size: 0.8rem;
+  }
+  #hero {
+    grid-template-columns: 1fr;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-right {
+    order: -1;
+  }
+  .hero-right img {
+    width: 45%;
+  }
+  .hero-left {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .hero-left .pre-title {
+    margin: 0 auto;
+  }
+  .hero-name {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+}
 :root {
   --primaryTextColor: #232e35;
   --secondaryTextColor: #656d72;
@@ -282,7 +382,6 @@ nav ul li a {
   --secondaryBackgroundColor: #fbfbfb;
   --thirdBackgroundColor: #f5f3fe;
   --primaryIconColor: #E50046;
-  --primaryIconColorHover: #5d51eB;
   --sectionPadding: 6rem 0;
   --itemBorderRadius: 0.7rem;
 }

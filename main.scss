@@ -4,7 +4,8 @@
 @import 'portofolio';
 @import 'skills';
 @import 'contact';
-@import 'copyright';
+@import 'footer';
+@import 'responsive';
 
 :root {
     --primaryTextColor :  #232e35;
@@ -15,7 +16,6 @@
     --secondaryBackgroundColor: #fbfbfb;
     --thirdBackgroundColor: #f5f3fe;
     --primaryIconColor: #E50046;
-    --primaryIconColorHover: #5d51eB;
     --sectionPadding: 6rem 0;
     --itemBorderRadius: 0.7rem;
 }
