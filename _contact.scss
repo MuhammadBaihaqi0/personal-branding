@@ -1,0 +1,33 @@
+#contact {
+    padding: var(--sectionPadding);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+
+    &-item {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+
+        &-icon {
+            background: var(--thirdBackgroundColor);
+            width: 53px;
+            height: 53px;
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            svg {
+                fill: var(--primaryIconColor);
+            }
+    }
+
+    &-detail h4{
+        margin-bottom: 0.6rem;
+    }
+    }
+}
