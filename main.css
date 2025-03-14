@@ -373,6 +373,14 @@ footer {
     padding: 2rem 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .pre-title {
+    font-size: 0.7rem;
+  }
+}
 :root {
   --primaryTextColor: #232e35;
   --secondaryTextColor: #656d72;
